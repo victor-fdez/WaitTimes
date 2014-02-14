@@ -1,5 +1,7 @@
 # Wait Times
 
+** Wait Times is an app made for iOS and Android that uses the onboard sensors of mobile devices to predict waiting times at the border crossings in the United States and Mexico. **
+
 **We have started working on a project that we believe might be a commercial success among the border crossers of the United States, Mexico region.**
 
 The idea, is to create a mobile application that can use the onboard sensors of a smartphone (gyroscope, GPS, accelerometer) to compile information about the position and movement of the car. This information will be sent to a server, where calculations will be done on the data. After the calculations are done, the server will respond with quasi real-time information of the state of traffic in the brdige border crossings.
