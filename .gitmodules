@@ -1,0 +1,3 @@
+[submodule "wait-times-server"]
+	path = wait-times-server
+	url = https://github.com/victor-fdez/wait-times-server.git
