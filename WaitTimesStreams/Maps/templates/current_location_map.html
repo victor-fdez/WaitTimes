@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Leaflet mobile example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<link rel="stylesheet" href="../../static/jsleaflet.css" />-->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			html, body, #map {
+				height: 100%;
+			}
+		</style>
+		<script>
+			var lon = 5;
+			var lat = 40;
+			var zoom = 5;
+			var map;
+			function init(){
+				map = new OpenLayers.Map({
+					div: "map",
+					allOverlays: true
+				});
+
+				//OpenStretMaps Layer
+				var osm = new OpenLayers.Layer.OSM("victorstreetmaps", "http://www.cerberu.com/osm_tiles/${z}/${x}/${y}.png");
+
+				//GeoJSON layer
+				var geoJsonFormat = new OpenLayers.Format.GeoJSON({});
+				var geoJsonGetter = new OpenLayers.Protocol.HTTP({
+					url: 'http://www.cerberu.com:8001/static/json/home.geojson',
+					format: geoJsonFormat
+				});
+				var geoJsonLoadStrategy = [new OpenLayers.Strategy.Fixed()];
+				var geoJsonLayer = new OpenLayers.Layer.Vector('Home', {
+					protocol: geoJsonGetter,
+					strategies: geoJsonLoadStrategy
+				});
+				//var json = new OpenLayers.Layer.Vector("homemapping", 
+
+				//add layers to map
+				map.addLayers([osm]);
+				osm.setVisibility(true);
+				geoJsonLayer.setVisibility(true);
+				map.zoomToMaxExtent();
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<div id="map"></div>
+		<script src="../../static/js/openlayers/lib/OpenLayers.js"></script>
+	</body>
+</html>
+
