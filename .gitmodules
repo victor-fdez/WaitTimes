@@ -1,3 +1,12 @@
 [submodule "wait-times-server"]
 	path = wait-times-server
 	url = https://github.com/victor-fdez/wait-times-server.git
+[submodule "wait-times-ios"]
+	path = wait-times-ios
+	url = https://github.com/victor-fdez/wait-times-ios.git
+[submodule "wait-times-android"]
+	path = wait-times-android
+	url = https://github.com/victor-fdez/wait-times-android.git
+[submodule "wait-times-design"]
+	path = wait-times-design
+	url = https://github.com/victor-fdez/wait-times-design.git
