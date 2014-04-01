@@ -31,4 +31,14 @@ The idea, is to create a mobile application that can use the onboard sensors of 
 + Estimated wait times.
 + Length of queue
 + The server will store the time information of all users but not their locations at that particular time to generate reports and historical time queue data.
++ 
+
+
+###Libraries that we might use
+
+http://d3js.org/
+http://square.github.io/cubism/
+http://code.shutterstock.com/rickshaw/
+
+This is a very good website: http://selection.datavisualization.ch/
 
