@@ -37,7 +37,9 @@ The idea, is to create a mobile application that can use the onboard sensors of 
 ###Libraries that we might use
 
 http://d3js.org/
+
 http://square.github.io/cubism/
+
 http://code.shutterstock.com/rickshaw/
 
 This is a very good website: http://selection.datavisualization.ch/
